@@ -1,4 +1,7 @@
 .about{
     min-height: 100vh;
     font-size: 1.6rem;
+   background-color: var(--bg);
+   padding-top: 80px;
+   color: var(--white);
 }

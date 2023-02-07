@@ -7,7 +7,15 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main
+        style={{
+          backgroundColor: "#a28eb8",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        {children}
+      </main>
       <Footer />
     </>
   );

@@ -8,6 +8,8 @@
 .isOnHero{
   display: block !important;
   background-color: var(--bg) !important;
+  border-top-right-radius: 28px;
+  border-top-left-radius: 28px;
 }
 .header {
   width: 100%;
