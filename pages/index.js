@@ -1,5 +1,7 @@
 import About from "@/components/UI/About";
+import Download from "@/components/UI/Download";
 import Hero from "@/components/UI/Hero";
+import Pricing from "@/components/UI/Pricing";
 import Services from "@/components/UI/Services";
 
 export default function Home() {
@@ -7,10 +9,12 @@ export default function Home() {
     <>
       <Hero />
       <About />
-      <Services />
+
+      <Pricing />
+      <Download />
       {/* <Testimonials />
-      <Pricing/>
-      <Download/> */}
+           <Services />
+       */}
     </>
   );
 }
