@@ -1,8 +1,12 @@
 import React from "react";
 import classes from "../../styles/button.module.css";
 
-const Button = ({ text }) => {
-  return <div className={`${classes.button}`}>{text}</div>;
+const Button = ({ text, padding }) => {
+  return (
+    <div className={`${classes.button}`} style={{ padding: padding }}>
+      {text}
+    </div>
+  );
 };
 
 export default Button;
