@@ -5,29 +5,7 @@ import Link from "next/link";
 import classes from "../../styles/header.module.css";
 import Image from "next/image";
 import logo from "../../public/images/logo-light.png";
-
-const NAV__LINK = [
-  {
-    path: "/",
-    display: "Home",
-  },
-  {
-    path: "#portfolio",
-    display: "Portfolio",
-  },
-  {
-    path: "#about",
-    display: "About",
-  },
-  {
-    path: "#Certifications",
-    display: "Certifications",
-  },
-  {
-    path: "#contact",
-    display: "Contact",
-  },
-];
+import { NAV__LINK } from "../data/nav-link";
 
 const Header = ({ isOnHero }) => {
   const headerRef = useRef(null);
