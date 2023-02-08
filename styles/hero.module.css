@@ -1,0 +1,190 @@
+.pre_hero {
+  background: #a28eb8;
+  height: 10px;
+  display: block;
+}
+
+.hero{
+  min-height: 100vh;
+  font-size: 1.6rem;
+  background-color: var(--bg);
+  color: var(--white);
+  border-top-right-radius: 28px;
+  border-top-left-radius: 28px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hero__img {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  padding-top: 60px;
+}
+
+.hero__img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container__left{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+  padding: 28px;
+  min-height: 100vh;
+
+}
+.container__left_div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container__left_div h1{
+  margin: 16px 0px;
+  font-size: 5.5rem;
+  font-weight: 700;
+  align-self: flex-start;
+  gap: 12px;
+}
+
+.container__footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__footer p{
+  font-size: 1.2rem;
+}
+
+
+
+/* .hero {
+  padding-top: 60px !important;
+}
+.hero__content h5 {
+  color: #b2becd;
+  font-weight: 400;
+}
+
+.hero__content {
+  padding-top: 50px;
+}
+
+
+
+.hero__img img {
+  border-radius: 50px 5px 5px 5px;
+}
+.hero__container {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .hero__content h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .hero__content h5 {
+    font-size: 1.1rem !important;
+  }
+
+  .hero__img img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .hero__content {
+    padding-top: 0;
+  }
+
+  .hero__skills {
+    padding: 10px;
+    width: 90px;
+    left: 5%;
+  }
+
+  .hero__skills h6,
+  .hero__skills span i {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+
+  .hero__experience {
+    padding: 10px;
+    width: 115px;
+  }
+
+  .hero__experience h6 {
+    font-size: 0.7rem;
+  }
+
+  .hero__experience h5 {
+    font-size: 0.9rem;
+  }
+  .hero__experience span i {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__img {
+    text-align: center !important;
+    margin-top: 50px;
+  }
+
+  .hero__skills {
+    left: 15%;
+  }
+
+  .hero__experience {
+    right: 20%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero__skills {
+    display: none;
+  }
+  .hero__experience {
+    display: none !important;
+  }
+}
+ */
+
+ @media only screen and (max-width: 768px) {
+  .hero__img {
+
+    padding-right: 0px;
+    padding-bottom: 28px;
+    padding-top: 0px;
+  }
+  .hero__img img {
+    max-width: 80%;
+
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  .hero__img img {
+    max-width: 50%;
+
+  }
+}
