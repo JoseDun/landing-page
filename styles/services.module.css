@@ -1,8 +1,8 @@
-.services{
-    min-height: fit-content;
-    font-size: 1.6rem;
-    background-color: var(--black);
-    color: var(--white);
+.services {
+  min-height: fit-content;
+  font-size: 1.6rem;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .services__container {
@@ -12,7 +12,6 @@
   justify-content: center;
   gap: 42px;
   padding: 80px 0px;
-
 }
 
 .services__div {
@@ -38,10 +37,7 @@
 }
 
 @media only screen and (max-width: 420px) {
-
-    .services__slider {
-        height: 280px;
-    }
-    
-
+  .services__slider {
+    height: 280px;
+  }
 }

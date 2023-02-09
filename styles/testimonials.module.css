@@ -23,32 +23,28 @@
   display: flex;
 }
 
-
-.testimonials__div{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.testimonials__div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .testimonials__div span {
-    width: 30%;
-    font-size: 28px;
+  width: 30%;
+  font-size: 28px;
 }
 
 .testimonials__div div {
-    margin-left: 16px;
-
+  margin-left: 16px;
 }
 
-.testimonials__div div h6{
-    text-align: left;
-    font-size: 1.6rem;
-
+.testimonials__div div h6 {
+  text-align: left;
+  font-size: 1.6rem;
 }
-.testimonials__div div p{
-    text-align: left;
-    font-size: 1.2rem;
-
+.testimonials__div div p {
+  text-align: left;
+  font-size: 1.2rem;
 }
 
 .testimonials__right {
@@ -59,10 +55,7 @@
 }
 
 @media only screen and (max-width: 550px) {
-    .testimonials {
-
-        flex-wrap: wrap;
-
-      }
-
+  .testimonials {
+    flex-wrap: wrap;
   }
+}

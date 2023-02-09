@@ -1,11 +1,12 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
-import { FOOTER__LINK } from "../data/nav-link";
+import { FOOTER__LINK } from "../data/data";
 
-import logo from "../../public/images/logo-light.png";
+import logo from "../../public/images/Logotipo.png";
 import classes from "../../styles/footer.module.css";
+
 const Footer = () => {
   return (
     <footer className={`${classes.footer}`}>
@@ -14,8 +15,8 @@ const Footer = () => {
           <Image
             alt="logo"
             src={logo}
-            width="70"
-            height="30"
+            width="200"
+            height="80"
             style={{ objectFit: "contain" }}
           />
         </div>

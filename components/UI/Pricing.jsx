@@ -5,7 +5,9 @@ const Pricing = () => {
   return (
     <section className={`${classes.pricing}`} id="pricing">
       <aside className={`${classes.asideLeft}`}>
-        <div>Pricing</div>
+        <div className={`${classes.asideLeft__div}`}>
+          <span>Pricing</span>
+        </div>
         <h2>A simple price</h2>
       </aside>
       <aside className={`${classes.asideRight}`}>

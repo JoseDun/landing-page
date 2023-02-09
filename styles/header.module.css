@@ -48,6 +48,10 @@
   display: none;
 }
 
+.nav__menu a:hover {
+  color: var(--hover);
+}
+
 @media only screen and (max-width: 992px) {
   .navigation {
     position: fixed;
@@ -98,44 +102,3 @@
     padding: 0 22px;
   }
 }
-
-/* 
-
-.nav__menu a {
-  color: #b2becd;
-  font-weight: 500;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.nav__menu a:hover {
-  color: #0092cc;
-}
-
-.nav__menu a:first-child {
-  color: #0092cc;
-}
-
-.nav__right p {
-  color: #0092cc;
-  margin-left: 20px;
-  position: relative;
-}
-.nav__right i {
-  color: #b2becd;
-}
-
-.nav__right p::before {
-  content: "";
-  position: absolute;
-  top: 25%;
-  left: -20px;
-  width: 1px;
-  height: 14px;
-  background: #b2becd;
-  color: #b2becd;
-}
-
- */

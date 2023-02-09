@@ -1,32 +1,13 @@
 import React, { useEffect, useState } from "react";
+import Slider from "react-slick";
 
 import Card from "../common/Card";
+import { cardData } from "../data/data";
 
 import classes from "../../styles/services.module.css";
-import Slider from "react-slick";
 
 const Services = () => {
   const [screenWidth, setScreenWidth] = useState(null);
-  const cardData = [
-    {
-      id: 1,
-      icon: <i className="ri-wallet-fill"></i>,
-      title: "Easy Payment",
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    },
-    {
-      id: 2,
-      icon: <i className="ri-wallet-fill"></i>,
-      title: "Easy ",
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    },
-    {
-      id: 3,
-      icon: <i className="ri-wallet-fill"></i>,
-      title: "EPayment",
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    },
-  ];
 
   useEffect(() => {
     function handleResize() {

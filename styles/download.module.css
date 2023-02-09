@@ -1,5 +1,4 @@
 .about {
-  min-height: 100vh;
   font-size: 1.6rem;
   background-color: var(--black);
   padding-top: 80px;
@@ -30,8 +29,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  min-height: 100vh;
-  /* gap: 80px; */
 }
 .container__left_div {
   display: flex;
@@ -44,35 +41,40 @@
 }
 
 .container__left_div p {
-  color: linear-gradient(310deg, #ef7355, #ffbb86, #8781c6);
+  color: var(--white);
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
   margin-bottom: 20px;
 }
+.container__left_div p:first-child {
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  background: linear-gradient(310deg, #ef7355, #ffbb86, #8781c6);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 .container__left_div h2 {
-  font-size: 4rem;
-
+  font-size: 3.2rem;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 .container__left_div p:last-of-type {
   font-weight: 300;
-
   font-size: 1.6rem;
 }
 
 .container__button {
-    display: flex;
-    gap: 18px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 550px) {
-
   .hero__img img {
     max-width: 50%;
     height: auto;
   }
-  
 }

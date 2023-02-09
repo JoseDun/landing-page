@@ -1,15 +1,14 @@
 import React, { useRef, useEffect } from "react";
-
 import Link from "next/link";
+import Image from "next/image";
+
+import { NAV__LINK } from "../data/data";
+import logo from "../../public/images/Logotipo.png";
 
 import classes from "../../styles/header.module.css";
-import Image from "next/image";
-import logo from "../../public/images/logo-light.png";
-import { NAV__LINK } from "../data/nav-link";
 
 const Header = ({ isOnHero }) => {
   const headerRef = useRef(null);
-
   const menuRef = useRef(null);
 
   const headerFunc = () => {
@@ -17,10 +16,14 @@ const Header = ({ isOnHero }) => {
       document.body.scrollTop > 200 ||
       document.documentElement.scrollTop > 200
     ) {
-      headerRef.current.classList.add(`${classes.header__shrink}`);
+      return headerRef.current.classList.add(`${classes.header__shrink}`);
     } else {
-      headerRef.current.classList.remove(`${classes.header__shrink}`);
+      return headerRef.current.classList.remove(`${classes.header__shrink}`);
     }
+  };
+
+  const toggleMenu = () => {
+    menuRef.current.classList.toggle(`${classes.menu__active}`);
   };
 
   useEffect(() => {
@@ -31,9 +34,6 @@ const Header = ({ isOnHero }) => {
     return () => window.removeEventListener("scroll", headerFunc);
   }, [isOnHero]);
 
-  const toggleMenu = () =>
-    menuRef.current.classList.toggle(`${classes.menu__active}`);
-
   return (
     <header className={`${classes.header}`} ref={headerRef}>
       <nav className={`${classes.nav__wrapper}`}>
@@ -41,8 +41,8 @@ const Header = ({ isOnHero }) => {
           <Image
             alt="logo"
             src={logo}
-            width="70"
-            height="30"
+            width="200"
+            height="80"
             style={{ objectFit: "contain" }}
           />
         </div>
