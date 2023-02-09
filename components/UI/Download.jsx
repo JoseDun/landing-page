@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 
-import Button from "../common/Button";
 import aboutImg from "../../public/images/download.png";
 
 import classes from "../../styles/download.module.css";

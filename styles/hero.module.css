@@ -187,4 +187,13 @@ align-items: center;
     max-width: 50%;
 
   }
+  .container__left{
+
+      padding:0px 8px 16px 0px;
+
+    
+    }
+    .container__left_div p {
+      margin-bottom: 12px;
+    }
 }
