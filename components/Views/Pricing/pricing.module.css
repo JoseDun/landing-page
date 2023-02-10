@@ -1,0 +1,68 @@
+.pricing {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  background-color: var(--bg);
+  padding-top: 80px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.asideLeft {
+  font-weight: 500;
+  font-size: 3.2rem;
+  padding-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.asideLeft__div {
+  font-size: 1.6rem;
+  padding: 4px;
+  background-color: var(--pricing-title);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  width: 40%;
+}
+
+.asideLeft__div span {
+  font-size: 1.6rem;
+  background: var(--gradient);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.asideRight {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 8px;
+}
+
+@media only screen and (max-width: 992px) {
+  .asideRight {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 8px;
+  }
+
+  .asideLeft {
+    font-weight: 500;
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .asideLeft {
+    font-size: 1.6rem;
+  }
+}

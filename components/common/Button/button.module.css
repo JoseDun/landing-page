@@ -1,0 +1,57 @@
+.button {
+  padding: 10px 15px;
+  display: inline-block;
+  background-image: var(--gradient);
+  border-radius: 30px;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: transparent;
+}
+
+.SecondaryButton {
+  padding: 20px 42px;
+  font-size: 1.8rem;
+  display: inline-block;
+  background-color: var(--black);
+  border-radius: 30px;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: solid 1px var(--white);
+}
+
+.insideButton {
+  font-size: 1.8rem;
+  background-color: var(--bg);
+  color: var(--white);
+  border: none;
+  width: 100%;
+  min-height: 60px;
+  border-top: solid 1px var(--border);
+}
+
+.insideButton:hover {
+  background-image: none;
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
+}
+
+.SecondaryButton:hover {
+  background-image: none;
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 394px) {
+  .button {
+    padding: 4px 10px;
+    font-size: 1.3rem;
+  }
+}

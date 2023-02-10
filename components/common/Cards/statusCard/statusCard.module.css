@@ -1,0 +1,21 @@
+.status {
+  padding: 40px;
+  background: var(--statusCardBackgroud);
+  border-radius: 10px;
+  min-width: 180px;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min-content;
+}
+
+.status p {
+  margin-bottom: 0px !important;
+  padding-left: 8px;
+}
+
+.status h2 {
+  margin-bottom: 0px !important;
+  min-width: 100px;
+}

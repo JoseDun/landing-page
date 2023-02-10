@@ -1,0 +1,7 @@
+.span {
+  display: flex;
+}
+
+.span p {
+  padding-left: 16px;
+}
