@@ -8,6 +8,7 @@ import {
   Pricing,
 } from "@/components/Views/";
 
+
 export default function Home() {
   return (
     <>
